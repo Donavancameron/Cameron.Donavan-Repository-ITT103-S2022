@@ -1,0 +1,24 @@
+#Author:Donavan Cameron
+#Date Created:May 2 2022
+#Course: ITT103
+#Purpose: Calculate and print the commission received by a salesperson. The program should process an undetermined number of salespersons and appropriately terminate by a predefined input.
+
+sales = int(input('Sales amount '))
+salesperson_number = (input('Salesperson number '))
+Class  = int(input('Class '))
+if Class == 1:
+    if sales <= 1000:
+        print("Commission received ",0.06 * sales)
+    elif 1000 < sales <= 2000:
+        print("Commission received ", 0.07 * sales)
+    else:
+        print("Commission received ", 0.1 * sales)
+elif Class == 2:
+    if sales <= 1000:
+        print("Commission received ", 0.04 * sales)
+    else:
+        print("Commission received ", 0.06 * sales)
+elif Class == 3:
+    print("Commission received ", 0.045 * sales)
+else:
+    print('Error Class is not found')
